@@ -1,0 +1,88 @@
+.articl {
+  width: 100%;
+  height: 904px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: url(/img/qizlar.png);
+  background-size: cover;
+  background-position: left;
+  h1 {
+    max-width: 345px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+  }
+  .articl_asi {
+    margin-left: 45%;
+    max-width: 870px;
+    height: 180px;
+    display: flex;
+    gap: 30px;
+    padding: 30px 60px;
+    background-color: #fff;
+    .articl_div {
+      h3 {
+        display: block;
+        width: 486px;
+        color: #000;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px; /* 200% */
+      }
+      p {
+        width: 250px;
+        display: inline-block;
+        font-family: Roboto;
+        font-weight: 700;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (min-width:990px) and (max-width:1200px) {
+    .articl{
+        .articl_asi{
+            margin-left: 25%;
+        }
+    }
+}
+@media (min-width:770px) and (max-width:990px) {
+    .articl{
+        .articl_asi{
+            margin-left: 6%;
+        }
+    }
+}
+
+@media (min-width:447px) and (max-width:769px) {
+    .articl{
+      h1{
+        font-size: 32px;
+      }
+        .articl_asi{
+            display: none;
+        }
+    }
+}
+@media (max-width:446px) {
+    .articl{
+      h1{
+        font-size: 28px;
+      }
+        .articl_asi{
+            display: none;
+        }
+    }
+}

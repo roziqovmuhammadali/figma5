@@ -1,0 +1,111 @@
+.aside {
+  width: 100%;
+  height: 554px;
+  background-color: #ebeef3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px 0px 100px;
+  h1 {
+    max-width: 715px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+  }
+  p {
+    max-width: 552px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 145.455% */
+  }
+  
+  
+    .aside_d{
+       max-width: 1000px;
+      display: flex;
+      align-items:start;
+      justify-content: center;
+      gap: 30px;
+      .aside_sec{
+        max-width:900px;
+        height: 200px;
+        display: flex;
+        align-items:start;
+        justify-content: start;
+        background-image: url(/img/tell.png );
+        background-size: cover;
+    }
+  }
+}
+@media (min-width:990px) and (max-width:1200px){
+  .aside{
+    padding: 20px 20px 0px 20px;
+
+    .aside_d{
+      gap: 5px;
+      padding:5px 5px;
+    }
+  }
+}
+@media (min-width:770px) and (max-width:990px){
+  .aside{
+    padding: 20px 20px 0px 20px;
+
+    .aside_d{
+      gap: 5px;
+      padding:5px 5px;
+      .aside_sec{
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width:447px) and (max-width:769px){
+  .aside{
+    padding: 20px 10px 30px 10px;
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .aside_d{
+      gap: 5px;
+      padding:5px 5px;
+      display: flex;
+      flex-direction: column;
+      .aside_sec{
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width:446px){
+  .aside{
+    padding: 20px 10px 30px 10px;
+    h1{
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .aside_d{
+      gap: 5px;
+      padding:5px 5px;
+      display: flex;
+      flex-direction: column;
+      .aside_sec{
+        display: none;
+      }
+    }
+  }
+}

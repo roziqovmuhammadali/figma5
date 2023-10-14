@@ -1,0 +1,91 @@
+.nav1 {
+  width: 100%;
+  height: 684px;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(/img/student.png);
+  background-size: cover;
+  background-position: center;
+  gap: 30px;
+
+  h1 {
+    max-width: 488px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    padding: 10px 70px;
+  }
+  h3 {
+    max-width: 400px;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 148.148% */
+    text-align: center;
+    padding-left: 90px;
+  }
+  .nav2 {
+    display: flex;
+    gap: 50px;
+    .nav1_a {
+      width: 300px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      input {
+        width: 200px;
+        height: 20px;
+        color: rgba(0, 0, 0, 0.2);
+        font-weight: 400;
+        border: none;
+      }
+    }
+    button {
+      width: 108px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 3px;
+      background: #190083;
+      border: none;
+      color: #fff;
+    }
+  }
+}
+@media (min-width: 447px) and (max-width: 770px) {
+  .nav1 {
+    padding: 25px 25px;
+
+    h1 {
+      font-size: 25px;
+      padding: 25px 25px;
+    }
+  }
+}
+@media (max-width: 446px) {
+  .nav1 {
+    padding: 15px 20px;
+    h1 {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .nav2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
